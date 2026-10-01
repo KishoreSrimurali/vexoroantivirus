@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cremewich · The Perfect Bite Exists</title>
+  <meta name="description" content="Cremewich ice cream sandwiches: creamy ice cream pressed between fresh-baked cookies. See the flavours, our story, and where to find us.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:opsz,wght,SOFT@9..144,700..900,100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23eb5230'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' font-weight='900' text-anchor='middle' fill='%23fbefe0'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="wordmark" href="#top" aria-label="Cremewich home">Cremewich<sup>®</sup></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#flavours">Flavours</a>
+        <a href="#about">Our story</a>
+        <a href="#contact">Find us</a>
+        <a href="#contact" class="btn btn-small">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Ice cream sandwiches</p>
+          <h1>The perfect bite exists</h1>
+          <p class="lede">Creamy, slow-churned ice cream pressed between soft, fresh-baked cookies. One bite and you'll get it.</p>
+          <div class="hero-actions">
+            <a href="#flavours" class="btn">See the flavours</a>
+            <a href="#contact" class="btn btn-ghost">Find us</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/nutella.jpg" alt="A Cremewich ice cream sandwich with a bite taken out, half dipped in glossy chocolate" width="1222" height="656">
+          <figcaption>Nutella Marble Swirl</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Flavours -->
+    <section id="flavours" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">For the love of</p>
+          <h2>Our flavours</h2>
+          <p>Two indulgent favourites lead the line-up, with more to keep the freezer interesting.</p>
+        </div>
+
+        <div class="featured">
+          <article class="feature">
+            <img src="images/nutella.jpg" alt="Nutella Marble Swirl ice cream sandwich, half dipped in chocolate" width="1222" height="656" loading="lazy">
+            <div class="feature-body">
+              <span class="tag">Signature</span>
+              <h3>Nutella Marble Swirl</h3>
+              <p>Hazelnut ice cream marbled with Nutella, between golden oat cookies and half-dipped in dark chocolate.</p>
+            </div>
+          </article>
+          <article class="feature">
+            <img src="images/pb.jpg" alt="PB and chocolate ice cream sandwich between two crumbly chocolate cookie layers, with peanuts and chocolate chunks" width="1222" height="892" loading="lazy">
+            <div class="feature-body">
+              <span class="tag">Signature</span>
+              <h3>PB + Chocolate</h3>
+              <p>Two indulgent favourites, sandwiched into one irresistible bite. Peanut butter ice cream on rich chocolate crumb.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter flavours">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="chocolate" aria-pressed="false">Chocolatey</button>
+          <button class="filter" data-filter="fruity" aria-pressed="false">Fruity</button>
+          <button class="filter" data-filter="classic" aria-pressed="false">Classics</button>
+        </div>
+
+        <div class="box-grid">
+          <article class="box box-lavender" data-category="classic">
+            <h3>Vanilla Bean</h3>
+            <p>Madagascar vanilla between buttery sugar cookies.</p>
+          </article>
+          <article class="box box-lime" data-category="fruity">
+            <h3>Key Lime Pie</h3>
+            <p>Zesty lime ice cream on graham crumb cookies.</p>
+          </article>
+          <article class="box box-pink" data-category="fruity">
+            <h3>Strawberry Shortcake</h3>
+            <p>Roasted strawberry ice cream on vanilla shortbread.</p>
+          </article>
+          <article class="box box-red" data-category="chocolate">
+            <h3>Double Chocolate</h3>
+            <p>Dark chocolate ice cream between fudgy cocoa cookies.</p>
+          </article>
+          <article class="box box-yellow" data-category="classic">
+            <h3>Salted Caramel</h3>
+            <p>Burnt caramel and sea salt on brown butter cookies.</p>
+          </article>
+          <article class="box box-choc" data-category="chocolate">
+            <h3>Cookies &amp; Cream</h3>
+            <p>Crushed cookie ice cream, because more cookie is always the answer.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stock up band -->
+    <section class="stock">
+      <div class="container stock-grid">
+        <div class="stock-copy">
+          <h2>Keeping my inner child <em>well stocked.</em></h2>
+          <p>Cremewich comes boxed in five colours, ready to stack in the freezer for whenever the craving hits. Grab a few, or grab the lot.</p>
+          <a href="#contact" class="btn btn-light">Find a stockist</a>
+        </div>
+        <img class="stock-photo" src="images/basket.jpg" alt="A wire shopping basket filled with Cremewich boxes in lavender, lime, pink, red and yellow" width="750" height="950" loading="lazy">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">Our story</p>
+          <h2>The cookie matters as much as the cream</h2>
+          <p>Most ice cream sandwiches get one half right. The ice cream is good but the cookie is rock hard, or the cookie is lovely and goes soggy in a minute. Cremewich started with a simple goal: make both halves worth eating on their own, then put them together.</p>
+          <p>We bake our cookies soft enough to bite straight from the freezer and churn our ice cream in small batches so it stays dense and creamy. The result is the bite we kept chasing.</p>
+        </div>
+        <ul class="values">
+          <li>
+            <h3>Baked fresh</h3>
+            <p>Cookies made in-house, soft enough to bite from frozen.</p>
+          </li>
+          <li>
+            <h3>Small-batch churned</h3>
+            <p>Dense, creamy ice cream made a few batches at a time.</p>
+          </li>
+          <li>
+            <h3>Real ingredients</h3>
+            <p>Real chocolate, real nuts, real fruit. Nothing you can't pronounce.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Find us</p>
+          <h2>Come grab a bite</h2>
+          <dl class="info">
+            <div><dt>Address</dt><dd>123 Sweet Street<br>Your City</dd></div>
+            <div><dt>Hours</dt><dd>Tuesday to Sunday, 12pm to 10pm<br>Closed Mondays</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:hello@cremewich.com">hello@cremewich.com</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://instagram.com/cremewich" rel="noopener">@cremewich</a></dd></div>
+          </dl>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <h3>Send us a note</h3>
+          <p class="form-hint">Stockist enquiries, parties, or a flavour request.</p>
+          <label>Name
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="wordmark">Cremewich<sup>®</sup></span>
+      <p>&copy; <span id="year"></span> Cremewich. The perfect bite exists.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
