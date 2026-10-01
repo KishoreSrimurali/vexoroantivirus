@@ -1,8 +1,11 @@
 # Cremewich website
 
-A static, single-page site for Cremewich: full-bleed hero, a three-point
-feature row, the full menu (combos, ice
-cream sandwiches and popsicles with ₹ prices, filterable), alternating story sections, and find-us/contact sections. Product
+A static, single-page site for Cremewich: a playful orange hero with the
+sandwich photo, floating mini boxes and a spinning badge, a scrolling flavour
+marquee, a tilted three-point feature row, the full menu (combos, ice cream
+sandwiches and popsicles with ₹ prices, filterable), the "inner child" band,
+our story and find-us/contact sections. Animations (wobbles, drips, scroll-in
+reveals) switch off for visitors who prefer reduced motion. Product
 photos in `images/` are cropped from the Cremewich brand posters. Plain HTML, CSS and JavaScript with no build step.
 
 ## Run it locally
