@@ -1,7 +1,8 @@
 # Cremewich website
 
-A static, single-page site for Cremewich: hero, the full menu (combos, ice
-cream sandwiches and popsicles with ₹ prices, filterable), a stock-up band, our story, and find-us/contact sections. Product
+A static, single-page site for Cremewich: full-bleed hero, a three-point
+feature row, the full menu (combos, ice
+cream sandwiches and popsicles with ₹ prices, filterable), alternating story sections, and find-us/contact sections. Product
 photos in `images/` are cropped from the Cremewich brand posters. Plain HTML, CSS and JavaScript with no build step.
 
 ## Run it locally
