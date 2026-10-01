@@ -19,7 +19,7 @@ links.addEventListener("click", (e) => {
 
 // Menu filters
 const filters = document.querySelectorAll(".filter");
-const boxes = document.querySelectorAll(".box");
+const items = document.querySelectorAll("#menu [data-category]");
 
 filters.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -29,8 +29,8 @@ filters.forEach((btn) => {
       b.classList.toggle("is-active", active);
       b.setAttribute("aria-pressed", String(active));
     });
-    boxes.forEach((box) => {
-      box.hidden = filter !== "all" && box.dataset.category !== filter;
+    items.forEach((item) => {
+      item.hidden = filter !== "all" && item.dataset.category !== filter;
     });
   });
 });

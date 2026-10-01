@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cremewich · The Perfect Bite Exists</title>
-  <meta name="description" content="Cremewich ice cream sandwiches: creamy ice cream pressed between fresh-baked cookies. See the flavours, our story, and where to find us.">
+  <meta name="description" content="Cremewich ice cream sandwiches: creamy ice cream pressed between fresh-baked cookies. See the menu, our story, and where to find us.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:opsz,wght,SOFT@9..144,700..900,100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="nav-links" class="nav-links">
-        <a href="#flavours">Flavours</a>
+        <a href="#menu">Menu</a>
         <a href="#about">Our story</a>
         <a href="#contact">Find us</a>
         <a href="#contact" class="btn btn-small">Get in touch</a>
@@ -36,7 +36,7 @@
           <h1>The perfect bite exists</h1>
           <p class="lede">Creamy, slow-churned ice cream pressed between soft, fresh-baked cookies. One bite and you'll get it.</p>
           <div class="hero-actions">
-            <a href="#flavours" class="btn">See the flavours</a>
+            <a href="#menu" class="btn">See the menu</a>
             <a href="#contact" class="btn btn-ghost">Find us</a>
           </div>
         </div>
@@ -47,65 +47,102 @@
       </div>
     </section>
 
-    <!-- Flavours -->
-    <section id="flavours" class="section">
+    <!-- Menu -->
+    <section id="menu" class="section">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">For the love of</p>
-          <h2>Our flavours</h2>
-          <p>Two indulgent favourites lead the line-up, with more to keep the freezer interesting.</p>
+          <p class="eyebrow">The menu</p>
+          <h2>Pick your bite</h2>
+          <p>Handmade cookie ice cream sandwiches, combo boxes and popsicles. All veg.</p>
         </div>
 
-        <div class="featured">
-          <article class="feature">
-            <img src="images/nutella.jpg" alt="Nutella Marble Swirl ice cream sandwich, half dipped in chocolate" width="1222" height="656" loading="lazy">
-            <div class="feature-body">
-              <span class="tag">Signature</span>
-              <h3>Nutella Marble Swirl</h3>
-              <p>Hazelnut ice cream marbled with Nutella, between golden oat cookies and half-dipped in dark chocolate.</p>
-            </div>
-          </article>
-          <article class="feature">
-            <img src="images/pb.jpg" alt="PB and chocolate ice cream sandwich between two crumbly chocolate cookie layers, with peanuts and chocolate chunks" width="1222" height="892" loading="lazy">
-            <div class="feature-body">
-              <span class="tag">Signature</span>
-              <h3>PB + Chocolate</h3>
-              <p>Two indulgent favourites, sandwiched into one irresistible bite. Peanut butter ice cream on rich chocolate crumb.</p>
-            </div>
-          </article>
-        </div>
-
-        <div class="filters" role="group" aria-label="Filter flavours">
+        <div class="filters" role="group" aria-label="Filter the menu">
           <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter" data-filter="chocolate" aria-pressed="false">Chocolatey</button>
-          <button class="filter" data-filter="fruity" aria-pressed="false">Fruity</button>
-          <button class="filter" data-filter="classic" aria-pressed="false">Classics</button>
+          <button class="filter" data-filter="combo" aria-pressed="false">Combos</button>
+          <button class="filter" data-filter="sandwich" aria-pressed="false">Ice cream sandwiches</button>
+          <button class="filter" data-filter="popsicle" aria-pressed="false">Popsicles</button>
         </div>
 
-        <div class="box-grid">
-          <article class="box box-lavender" data-category="classic">
-            <h3>Vanilla Bean</h3>
-            <p>Madagascar vanilla between buttery sugar cookies.</p>
+        <h3 class="menu-heading" data-category="combo">Combos</h3>
+        <div class="box-grid box-grid-wide">
+          <article class="box box-red" data-category="combo">
+            <h3>Gimme the Bestsellers Combo</h3>
+            <p>(Veg preparation) Death By Chocolate + Coffee Hazelnut + Nutella Marble + Fudgy Brownie + Lotus Biscoff + Blueberry Cheesecake</p>
+            <ul class="prices"><li><span>Box of 6</span><strong>₹699</strong></li></ul>
           </article>
-          <article class="box box-lime" data-category="fruity">
-            <h3>Key Lime Pie</h3>
-            <p>Zesty lime ice cream on graham crumb cookies.</p>
+          <article class="box box-choc" data-category="combo">
+            <h3>Chocolate Combo</h3>
+            <p>(Veg preparation) Death By Chocolate (2 Pieces) + Fudgy Brownie (2 Pieces) + Nutella Marble Swirl (2 Pieces)</p>
+            <ul class="prices"><li><span>Box of 6</span><strong>₹699</strong></li></ul>
           </article>
-          <article class="box box-pink" data-category="fruity">
-            <h3>Strawberry Shortcake</h3>
-            <p>Roasted strawberry ice cream on vanilla shortbread.</p>
+        </div>
+
+        <h3 class="menu-heading" data-category="sandwich">Classic ice cream sandwiches</h3>
+        <div class="box-grid box-grid-3">
+          <article class="box box-lavender" data-category="sandwich">
+            <h3>Death By Chocolate</h3>
+            <p>Pure chocolate indulgence in every bite.</p>
+              <p class="detail">Artisanal chocolate ice cream sandwiched between 2 handmade chocolate cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹199</strong></li></ul>
           </article>
-          <article class="box box-red" data-category="chocolate">
-            <h3>Double Chocolate</h3>
-            <p>Dark chocolate ice cream between fudgy cocoa cookies.</p>
+          <article class="box box-yellow" data-category="sandwich">
+            <h3>Coffee Hazelnut</h3>
+            <p>Smooth coffee blended with nutty hazelnut delight.</p>
+              <p class="detail">Classic coffee ice cream sandwiched between 2 handmade hazelnut cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹199</strong></li></ul>
           </article>
-          <article class="box box-yellow" data-category="classic">
-            <h3>Salted Caramel</h3>
-            <p>Burnt caramel and sea salt on brown butter cookies.</p>
+          <article class="box box-pink" data-category="sandwich">
+            <h3>Blueberry Cheesecake</h3>
+            <p>Creamy cheesecake swirled with juicy blueberries.</p>
+              <p class="detail">Blueberry cream cheese ice cream sandwiched between 2 handmade vanilla cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
           </article>
-          <article class="box box-choc" data-category="chocolate">
-            <h3>Cookies &amp; Cream</h3>
-            <p>Crushed cookie ice cream, because more cookie is always the answer.</p>
+          <article class="box box-lime" data-category="sandwich">
+            <h3>Nutella Marble Swirl</h3>
+            <p>Nutella-rich layers in a soft, chocolatey hug.</p>
+              <p class="detail">Rich Nutella ice cream sandwiched between 2 handmade vanilla choco marble cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
+          </article>
+          <article class="box box-red" data-category="sandwich">
+            <h3>Fudgy Brownie</h3>
+            <p>Gooey brownie cookies filled with vanilla ice cream.</p>
+              <p class="detail">Classic vanilla ice cream sandwiched between 2 handmade walnut brownie cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
+          </article>
+          <article class="box box-choc" data-category="sandwich">
+            <h3>Lotus Biscoff</h3>
+            <p>Caramelized Biscoff bliss in every creamy sandwich.</p>
+              <p class="detail">Creamy Biscoff ice cream sandwiched between 2 handmade vanilla cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
+          </article>
+        </div>
+
+        <h3 class="menu-heading" data-category="popsicle">Popsicles</h3>
+        <div class="box-grid box-grid-5">
+          <article class="box box-yellow" data-category="popsicle">
+            <h3>Orange Blast Popsicle</h3>
+            <p>Zesty orange ice pop bursting with bright and juicy citrus flavour.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹69</strong></li></ul>
+          </article>
+          <article class="box box-lime" data-category="popsicle">
+            <h3>Mint Mojito Popsicle</h3>
+            <p>(Non alcoholic) Cool minty ice pop with a refreshing citrus twist, perfect for beating the heat.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹69</strong></li></ul>
+          </article>
+          <article class="box box-lavender" data-category="popsicle">
+            <h3>Kaala Khatta Popsicle</h3>
+            <p>Tangy, chatpata kaala khatta ice pop with a nostalgic street style kick.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹79</strong></li></ul>
+          </article>
+          <article class="box box-pink" data-category="popsicle">
+            <h3>Litchi Love Popsicle</h3>
+            <p>Indulge in a refreshing, fruity treat that bursts with the sweet, tropical essence of litchi.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹79</strong></li></ul>
+          </article>
+          <article class="box box-red" data-category="popsicle">
+            <h3>Juicy Watermelon Popsicle</h3>
+            <p>Watermelon ice pop: light, hydrating and made for summer cravings.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹79</strong></li></ul>
           </article>
         </div>
       </div>
@@ -131,6 +168,7 @@
           <h2>The cookie matters as much as the cream</h2>
           <p>Most ice cream sandwiches get one half right. The ice cream is good but the cookie is rock hard, or the cookie is lovely and goes soggy in a minute. Cremewich started with a simple goal: make both halves worth eating on their own, then put them together.</p>
           <p>We bake our cookies soft enough to bite straight from the freezer and churn our ice cream in small batches so it stays dense and creamy. The result is the bite we kept chasing.</p>
+          <img class="about-photo" src="images/pb.jpg" alt="A Cremewich ice cream sandwich between two crumbly chocolate cookie layers, with peanuts and chocolate chunks" width="1222" height="892">
         </div>
         <ul class="values">
           <li>
