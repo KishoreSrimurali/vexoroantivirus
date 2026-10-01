@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cremewich · The Perfect Bite Exists</title>
+  <meta name="description" content="Cremewich ice cream sandwiches: two indulgent favourites, sandwiched into one irresistible bite.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,600..900,0..100,0..1;1,9..144,600..900,0..100,0..1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='6' y='10' width='52' height='14' rx='7' fill='%234a2c22'/%3E%3Crect x='6' y='24' width='52' height='16' rx='3' fill='%23d9b99a'/%3E%3Crect x='6' y='40' width='52' height='14' rx='7' fill='%234a2c22'/%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="wordmark" aria-label="Cremewich home">Cremewich<sup>®</sup></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#flavours">Flavours</a>
+        <a href="#boxes">Boxes</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#flavours" class="btn btn-small">Order now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Ice cream sandwiches</p>
+          <h1>The perfect bite exists</h1>
+          <p class="lead">Thick, slow-churned ice cream pressed between soft-baked cookies, then dipped, swirled and stacked. Two indulgent favourites, sandwiched into one irresistible bite.</p>
+          <div class="hero-actions">
+            <a href="#flavours" class="btn">See the flavours</a>
+            <a href="#contact" class="btn btn-outline">Find us</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="images/perfect-bite.jpg" alt="Cremewich Nutella Marble Swirl ice cream sandwich, half dipped in chocolate, with a bite taken out" width="1000" height="1255">
+        </figure>
+      </div>
+    </section>
+
+    <section id="flavours" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The flavours</p>
+          <h2>Pick your Cremewich</h2>
+          <p>Every sandwich is made fresh in small batches. Start with a signature, or grab a classic from the freezer.</p>
+        </div>
+
+        <div class="signature-grid">
+          <article class="signature">
+            <img src="images/perfect-bite.jpg" alt="Nutella Marble Swirl Cremewich" class="sig-img sig-img--bite" loading="lazy">
+            <div class="sig-body">
+              <span class="tag">Signature</span>
+              <h3>Nutella Marble Swirl</h3>
+              <p>Hazelnut cocoa ice cream between oat cookies, half-dipped in a glossy chocolate shell.</p>
+              <div class="card-foot"><span class="price">$7.00</span><button class="btn btn-small add" data-item="Nutella Marble Swirl">Add to box</button></div>
+            </div>
+          </article>
+          <article class="signature">
+            <img src="images/pb-chocolate.jpg" alt="PB and Chocolate Cremewich on parchment with peanuts and chocolate pieces" class="sig-img sig-img--pb" loading="lazy">
+            <div class="sig-body">
+              <span class="tag">Signature</span>
+              <h3>PB + Chocolate</h3>
+              <p>Peanut butter ice cream sandwiched between two crumbly chocolate cookie slabs.</p>
+              <div class="card-foot"><span class="price">$7.00</span><button class="btn btn-small add" data-item="PB + Chocolate">Add to box</button></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="sub-head">Freezer classics</h3>
+        <div class="box-grid">
+          <article class="box-card" style="--box:#b9a7e3;--ink:#d63a2a">
+            <div class="box"><span>Cremewich<sup>®</sup></span></div>
+            <h4>Vanilla Bean</h4>
+            <p>Real vanilla on dark cocoa cookies.</p>
+            <div class="card-foot"><span class="price">$5.50</span><button class="btn btn-small add" data-item="Vanilla Bean">Add</button></div>
+          </article>
+          <article class="box-card" style="--box:#d3dc8f;--ink:#d63a2a">
+            <div class="box"><span>Cremewich<sup>®</sup></span></div>
+            <h4>Mint Chip</h4>
+            <p>Fresh mint with dark chocolate flecks.</p>
+            <div class="card-foot"><span class="price">$5.50</span><button class="btn btn-small add" data-item="Mint Chip">Add</button></div>
+          </article>
+          <article class="box-card" style="--box:#f2b8c4;--ink:#d63a2a">
+            <div class="box"><span>Cremewich<sup>®</sup></span></div>
+            <h4>Strawberry Shortcake</h4>
+            <p>Roasted strawberry on sugar cookies.</p>
+            <div class="card-foot"><span class="price">$5.50</span><button class="btn btn-small add" data-item="Strawberry Shortcake">Add</button></div>
+          </article>
+          <article class="box-card" style="--box:#c8352a;--ink:#f3c74e">
+            <div class="box"><span>Cremewich<sup>®</sup></span></div>
+            <h4>Red Velvet</h4>
+            <p>Cream cheese ice cream, red velvet cookies.</p>
+            <div class="card-foot"><span class="price">$6.00</span><button class="btn btn-small add" data-item="Red Velvet">Add</button></div>
+          </article>
+          <article class="box-card" style="--box:#efc65a;--ink:#d63a2a">
+            <div class="box"><span>Cremewich<sup>®</sup></span></div>
+            <h4>Salted Caramel</h4>
+            <p>Burnt caramel on brown butter cookies.</p>
+            <div class="card-foot"><span class="price">$6.00</span><button class="btn btn-small add" data-item="Salted Caramel">Add</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="boxes" class="section section-orange">
+      <div class="container boxes-grid">
+        <div class="boxes-copy">
+          <h2>Keeping my inner child <em>well stocked.</em></h2>
+          <p>Mix any five classics into a take-home box, or order a party tray of 12 or 24 for birthdays, offices and anything worth celebrating.</p>
+          <ul class="box-sizes">
+            <li><strong>Box of 5</strong><span>$25</span></li>
+            <li><strong>Party tray of 12</strong><span>$58</span></li>
+            <li><strong>Party tray of 24</strong><span>$110</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-cream">Order a box</a>
+        </div>
+        <figure class="boxes-photo">
+          <img src="images/inner-child.jpg" alt="Five pastel Cremewich boxes stacked in a wire shopping basket on an orange background" loading="lazy" width="1000" height="1253">
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Our story</p>
+          <h2>For the love of two favourites</h2>
+          <p>Cremewich started with a simple belief: an ice cream sandwich should be more than a soggy wafer. So we bake our cookies thick, churn our ice cream dense, and press them together while both are at their best.</p>
+          <p>The result is the bite we kept chasing. We think it's perfect, but you should be the judge.</p>
+        </div>
+        <ul class="features">
+          <li><strong>Baked daily</strong><p>Cookies come out of the oven every morning.</p></li>
+          <li><strong>Slow-churned</strong><p>Dense, creamy ice cream made in small batches.</p></li>
+          <li><strong>Hand-dipped</strong><p>Real chocolate shells, poured and set by hand.</p></li>
+          <li><strong>Party ready</strong><p>Boxes and trays for every celebration.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-beige">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Say hello</p>
+          <h2>Come grab a bite</h2>
+          <dl class="info">
+            <div><dt>Hours</dt><dd>Tue to Sun, 12pm to 10pm</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:hello@cremewich.com">hello@cremewich.com</a></dd></div>
+            <div><dt>Party trays</dt><dd>Order with 48 hours' notice</dd></div>
+          </dl>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Message<textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="wordmark wordmark--light">Cremewich<sup>®</sup></span>
+      <p>© <span id="year"></span> Cremewich. The perfect bite exists.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
