@@ -1,7 +1,7 @@
 # Cremewich website
 
-A static, single-page site for Cremewich: a playful orange hero with the
-sandwich photo, floating mini boxes and a spinning badge, a scrolling flavour
+A static, single-page site for Cremewich: a poster-style hero with the whole
+Nutella Marble Swirl sandwich, stickers and a spinning badge, a scrolling flavour
 marquee, a tilted three-point feature row, the full menu (combos, ice cream
 sandwiches and popsicles with ₹ prices, filterable), the "inner child" band,
 our story and find-us/contact sections. Animations (wobbles, drips, scroll-in

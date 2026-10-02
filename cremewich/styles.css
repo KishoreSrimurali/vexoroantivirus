@@ -149,48 +149,47 @@ p { margin: 0 0 1em; }
 .drip-bottom { top: 100%; margin-top: -1px; }
 .drip-top { bottom: 100%; margin-bottom: -1px; transform: rotate(180deg); }
 
-/* Hero */
+/* Hero: poster-style, warm tan backdrop taken from the Cremewich poster */
 .hero {
+  --tan: #e2b892;
   position: relative;
   z-index: 2;
-  background: var(--orange);
-  color: var(--orange);
-  padding: clamp(48px, 7vw, 96px) 0 clamp(56px, 7vw, 88px);
+  background: radial-gradient(ellipse 80% 70% at 50% 65%, #e6bf9b 0%, var(--tan) 45%, #cf9d70 100%);
+  color: var(--choc);
+  padding-top: clamp(28px, 4vw, 52px);
+  text-align: center;
+  overflow-x: clip;
 }
-.hero { padding-top: clamp(32px, 4vw, 56px); }
-.hero-grid { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.35fr); gap: clamp(28px, 4vw, 56px); align-items: center; }
-.hero-copy { color: var(--cream); }
-.hero h1 { color: var(--cream); text-shadow: 4px 4px 0 var(--choc); font-size: clamp(2.8rem, 5.6vw, 5rem); }
-.squiggle { position: relative; display: inline-block; color: var(--yellow); }
+.hero-copy { position: relative; z-index: 3; }
+.hero h1 { color: var(--choc); font-size: clamp(2.6rem, 6.4vw, 5.6rem); margin-bottom: 0.3em; }
+.squiggle { position: relative; display: inline-block; color: var(--orange-deep); }
 .squiggle::after {
   content: "";
   position: absolute;
-  left: -2%; right: -2%; bottom: -0.12em;
-  height: 0.22em;
+  left: -2%; right: -2%; bottom: -0.1em;
+  height: 0.2em;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 16'%3E%3Cpath d='M2 10c10-8 18-8 28 0s18 8 28 0 18-8 28 0 18 8 28 0' fill='none' stroke='%233f2418' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
 }
-.lede { font-size: 1.2rem; color: var(--cream); max-width: 30em; }
-.hero-actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 30px; }
-.hero .btn-ghost { color: var(--cream); border-color: var(--cream); }
-.hero .btn-ghost:hover { background: var(--choc); }
+.lede { font-size: 1.15rem; color: var(--choc); max-width: 32em; margin-inline: auto; }
+.hero-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; margin-top: 22px; }
 .hero-hello { transform: rotate(-6deg); }
 
-/* The photo is the star: tall, and bleeding off the right edge of the screen */
+/* The photo: the whole sandwich, as wide as the screen allows, sitting on the drip */
 .hero-art {
   position: relative;
-  height: clamp(460px, 76vh, 720px);
-  margin-right: calc(-1 * max(16px, (100vw - 1180px) / 2));
+  width: min(1180px, 100%, 128vh);
+  margin: -36px auto 0;
 }
 .hero-photo {
-  position: absolute;
-  inset: 0;
-  border-radius: 48px 0 0 48px;
-  border: 4px solid var(--choc);
-  border-right: 0;
-  overflow: hidden;
-  box-shadow: -10px 10px 0 var(--choc);
+  width: 100%;
+  height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 14%), linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, transparent 0, #000 14%), linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
+  mask-composite: intersect;
+  transform-origin: 50% 100%;
+  animation: breathe 7s ease-in-out infinite;
 }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 58% 50%; animation: slowzoom 14s ease-in-out infinite alternate; }
 
 .mini-box {
   position: absolute;
@@ -198,22 +197,20 @@ p { margin: 0 0 1em; }
   border: 2px solid var(--choc);
   border-radius: 6px;
   box-shadow: 4px 4px 0 var(--choc);
-  font: 400 clamp(1rem, 1.6vw, 1.3rem)/1 var(--font-logo);
+  font: 400 clamp(0.9rem, 1.6vw, 1.3rem)/1 var(--font-logo);
   color: var(--red);
   white-space: nowrap;
   animation: float 6s ease-in-out infinite;
   z-index: 2;
 }
-.mini-lavender { background: var(--lavender); top: -22px; left: 14%; --r: -8deg; }
-.mini-lime { background: var(--lime); top: 38%; left: -48px; --r: 10deg; animation-delay: -1.5s; }
-.mini-pink { background: var(--pink); bottom: -20px; left: 30%; --r: 6deg; animation-delay: -3s; }
-.mini-yellow { background: var(--yellow); bottom: 26%; right: 6%; --r: -6deg; animation-delay: -4.5s; }
+.mini-lavender { background: var(--lavender); top: 60%; left: 3%; --r: -10deg; }
+.mini-pink { background: var(--pink); top: 58%; right: 3%; --r: 6deg; animation-delay: -3s; }
 
 .spin-badge {
   position: absolute;
-  width: clamp(120px, 14vw, 180px);
-  top: -48px;
-  right: 8%;
+  width: clamp(96px, 13vw, 170px);
+  top: 6%;
+  right: 6%;
   z-index: 3;
   animation: spin 16s linear infinite;
 }
@@ -222,8 +219,8 @@ p { margin: 0 0 1em; }
 
 .price-tag {
   position: absolute;
-  left: -36px;
-  bottom: 12%;
+  left: 10%;
+  top: 14%;
   z-index: 3;
   margin: 0;
   display: grid;
@@ -235,9 +232,11 @@ p { margin: 0 0 1em; }
   box-shadow: 4px 4px 0 var(--choc);
   transform: rotate(-8deg);
   line-height: 1.15;
+  text-align: left;
 }
 .price-tag span { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .price-tag strong { font: 900 1.6rem var(--font-display); color: var(--orange-deep); }
+.hero .drip { color: var(--choc); }
 
 /* Marquee */
 .marquee {
@@ -517,7 +516,7 @@ p { margin: 0 0 1em; }
 
 /* Animations */
 @keyframes float { 0%, 100% { transform: rotate(var(--r)) translateY(0); } 50% { transform: rotate(calc(var(--r) * -0.5)) translateY(-14px); } }
-@keyframes slowzoom { from { scale: 1; } to { scale: 1.12; } }
+@keyframes breathe { 0%, 100% { scale: 1; } 50% { scale: 1.03; } }
 @keyframes spin { to { rotate: 360deg; } }
 @keyframes marquee { to { transform: translateX(-50%); } }
 @keyframes wiggle { 0%, 100% { rotate: 0deg; } 25% { rotate: -12deg; } 75% { rotate: 12deg; } }
@@ -525,11 +524,13 @@ p { margin: 0 0 1em; }
 
 /* Responsive */
 @media (max-width: 880px) {
-  .hero-grid, .stock-grid, .story-row, .contact-grid { grid-template-columns: 1fr; }
-  .hero { padding-top: 40px; }
-  .hero-art { order: -1; height: clamp(340px, 52vh, 520px); margin-bottom: 28px; }
-  .mini-lime { left: -8px; }
-  .price-tag { left: -8px; }
+  .stock-grid, .story-row, .contact-grid { grid-template-columns: 1fr; }
+  .hero-art { width: 150%; margin: -12px 0 0 -25%; }
+  .mini-lavender { left: 18%; }
+  .mini-pink { right: 18%; }
+  .spin-badge { right: 18%; top: 14%; }
+  .price-tag { left: 19%; top: 16%; }
+  .price-tag strong { font-size: 1.25rem; }
   .contact-grid { gap: 48px; }
   .trio-grid { grid-template-columns: 1fr; gap: 22px; }
   .trio-card:nth-child(2) { transform: rotate(1.5deg); }
