@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cremewich · The Perfect Bite Exists</title>
+  <meta name="description" content="Cremewich ice cream sandwiches: creamy ice cream pressed between fresh-baked cookies. See the menu, our story, and where to find us.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Fraunces:opsz,wght,SOFT@9..144,700..900,100&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23eb5230'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' font-weight='900' text-anchor='middle' fill='%23fbefe0'%3EC%3C/text%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <!-- Reusable drip edge, coloured with currentColor -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="drip" viewBox="0 0 1440 90" preserveAspectRatio="none">
+        <path d="M0 0h1440v22c-28 0-34 30-58 30s-26-30-56-30c-26 0-24 58-52 58s-26-58-54-58c-40 0-44 20-80 20s-38-20-72-20c-24 0-22 44-46 44s-24-44-50-44c-38 0-40 26-78 26s-42-26-74-26c-26 0-26 64-54 64s-28-64-56-64c-36 0-42 18-76 18s-38-18-70-18c-24 0-24 40-48 40s-24-40-50-40c-38 0-44 24-80 24s-40-24-72-24c-26 0-26 54-52 54s-28-54-54-54c-34 0-38 16-70 16s-36-16-66-16c-22 0-22 34-44 34s-24-34-48-34z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="wordmark" href="#top" aria-label="Cremewich home">Cremewich<sup>®</sup></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links">
+        <a href="#menu">Menu</a>
+        <a href="#about">Our story</a>
+        <a href="#contact">Find us</a>
+        <a href="#contact" class="btn btn-small">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero: poster-style, the whole sandwich front and centre -->
+    <section class="hero">
+      <div class="container hero-copy">
+        <p class="sticker sticker-yellow hero-hello">Hi, hungry?</p>
+        <h1>The perfect <span class="squiggle">bite</span> exists</h1>
+        <p class="lede">Creamy ice cream squished between soft, handmade cookies. One bite and you'll get it. Two bites and you'll want a box.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn">See the menu</a>
+          <a href="#contact" class="btn btn-ghost">Find us</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <span class="mini-box mini-lavender" aria-hidden="true">Cremewich</span>
+        <span class="mini-box mini-pink" aria-hidden="true">Cremewich</span>
+        <img class="hero-photo" src="images/hero-sandwich.jpg" alt="A Nutella Marble Swirl ice cream sandwich with a bite taken out, showing thick Nutella ice cream between a marbled cookie and a chocolate-dipped side" width="1234" height="702">
+        <svg class="spin-badge" viewBox="0 0 200 200" aria-hidden="true">
+          <defs><path id="circle" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0"/></defs>
+          <circle cx="100" cy="100" r="98" />
+          <text><textPath href="#circle" textLength="462" lengthAdjust="spacing">handmade cookies ✦ real ice cream ✦ 100% veg ✦ </textPath></text>
+        </svg>
+        <p class="price-tag"><span>Nutella Marble Swirl</span><strong>₹120</strong></p>
+      </div>
+      <svg class="drip drip-bottom" aria-hidden="true"><use href="#drip"/></svg>
+    </section>
+
+    <!-- Flavour marquee -->
+    <div class="marquee" aria-label="Flavours: Death By Chocolate, Coffee Hazelnut, Blueberry Cheesecake, Nutella Marble Swirl, Fudgy Brownie, Lotus Biscoff, Kaala Khatta, Litchi Love, Mint Mojito">
+      <div class="marquee-track" aria-hidden="true">
+        <span>Death By Chocolate</span><i>✦</i><span>Coffee Hazelnut</span><i>✦</i><span>Blueberry Cheesecake</span><i>✦</i><span>Nutella Marble Swirl</span><i>✦</i><span>Fudgy Brownie</span><i>✦</i><span>Lotus Biscoff</span><i>✦</i><span>Kaala Khatta</span><i>✦</i><span>Litchi Love</span><i>✦</i><span>Mint Mojito</span><i>✦</i>
+        <span>Death By Chocolate</span><i>✦</i><span>Coffee Hazelnut</span><i>✦</i><span>Blueberry Cheesecake</span><i>✦</i><span>Nutella Marble Swirl</span><i>✦</i><span>Fudgy Brownie</span><i>✦</i><span>Lotus Biscoff</span><i>✦</i><span>Kaala Khatta</span><i>✦</i><span>Litchi Love</span><i>✦</i><span>Mint Mojito</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Feature trio -->
+    <section class="trio" aria-label="What makes a Cremewich">
+      <div class="container trio-grid">
+        <article class="trio-card trio-lavender reveal">
+          <svg class="trio-icon" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26"/><circle class="chip" cx="22" cy="24" r="4"/><circle class="chip" cx="38" cy="20" r="3"/><circle class="chip" cx="42" cy="38" r="4"/><circle class="chip" cx="25" cy="42" r="3"/><circle class="chip" cx="32" cy="31" r="2.5"/></svg>
+          <h3>Handmade cookies</h3>
+          <p>Every sandwich starts with cookies we bake by hand, soft enough to bite straight from the freezer.</p>
+        </article>
+        <article class="trio-card trio-yellow reveal">
+          <svg class="trio-icon" viewBox="0 0 64 64" aria-hidden="true"><path d="M20 30h24L32 60z"/><circle class="scoop" cx="32" cy="24" r="14"/><path class="drop" d="M24 30c0 6 4 6 4 0"/></svg>
+          <h3>Artisanal ice cream</h3>
+          <p>Dense, creamy ice cream in flavours like Coffee Hazelnut, Lotus Biscoff and Blueberry Cheesecake.</p>
+        </article>
+        <article class="trio-card trio-pink reveal">
+          <svg class="trio-icon" viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="10" width="44" height="44" rx="8"/><circle class="dot" cx="32" cy="32" r="11"/></svg>
+          <h3>100% veg</h3>
+          <p>Every sandwich, combo and popsicle on the menu is a veg preparation.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="sticker sticker-pink">The menu</p>
+          <h2>Pick your bite</h2>
+          <p>Handmade cookie ice cream sandwiches, combo boxes and popsicles. All veg. Choosing just one is the hard part.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter the menu">
+          <button class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter" data-filter="combo" aria-pressed="false">Combos</button>
+          <button class="filter" data-filter="sandwich" aria-pressed="false">Ice cream sandwiches</button>
+          <button class="filter" data-filter="popsicle" aria-pressed="false">Popsicles</button>
+        </div>
+
+        <h3 class="menu-heading" data-category="combo">Combos</h3>
+        <div class="box-grid box-grid-wide">
+          <article class="box box-red reveal" data-category="combo">
+            <span class="box-sticker sticker-yellow" aria-hidden="true">Try all 6!</span>
+            <h3>Gimme the Bestsellers Combo</h3>
+            <p>(Veg preparation) Death By Chocolate + Coffee Hazelnut + Nutella Marble + Fudgy Brownie + Lotus Biscoff + Blueberry Cheesecake</p>
+            <ul class="prices"><li><span>Box of 6</span><strong>₹699</strong></li></ul>
+          </article>
+          <article class="box box-choc reveal" data-category="combo">
+            <span class="box-sticker sticker-pink" aria-hidden="true">Chocoholics only</span>
+            <h3>Chocolate Combo</h3>
+            <p>(Veg preparation) Death By Chocolate (2 Pieces) + Fudgy Brownie (2 Pieces) + Nutella Marble Swirl (2 Pieces)</p>
+            <ul class="prices"><li><span>Box of 6</span><strong>₹699</strong></li></ul>
+          </article>
+        </div>
+
+        <h3 class="menu-heading" data-category="sandwich">Classic ice cream sandwiches</h3>
+        <div class="box-grid box-grid-3">
+          <article class="box box-lavender reveal" data-category="sandwich">
+            <h3>Death By Chocolate</h3>
+            <p>Pure chocolate indulgence in every bite.</p>
+              <p class="detail">Artisanal chocolate ice cream sandwiched between 2 handmade chocolate cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹199</strong></li></ul>
+          </article>
+          <article class="box box-yellow reveal" data-category="sandwich">
+            <h3>Coffee Hazelnut</h3>
+            <p>Smooth coffee blended with nutty hazelnut delight.</p>
+              <p class="detail">Classic coffee ice cream sandwiched between 2 handmade hazelnut cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹199</strong></li></ul>
+          </article>
+          <article class="box box-pink reveal" data-category="sandwich">
+            <h3>Blueberry Cheesecake</h3>
+            <p>Creamy cheesecake swirled with juicy blueberries.</p>
+              <p class="detail">Blueberry cream cheese ice cream sandwiched between 2 handmade vanilla cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
+          </article>
+          <article class="box box-lime reveal" data-category="sandwich">
+            <h3>Nutella Marble Swirl</h3>
+            <p>Nutella-rich layers in a soft, chocolatey hug.</p>
+              <p class="detail">Rich Nutella ice cream sandwiched between 2 handmade vanilla choco marble cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
+          </article>
+          <article class="box box-red reveal" data-category="sandwich">
+            <h3>Fudgy Brownie</h3>
+            <p>Gooey brownie cookies filled with vanilla ice cream.</p>
+              <p class="detail">Classic vanilla ice cream sandwiched between 2 handmade walnut brownie cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
+          </article>
+          <article class="box box-choc reveal" data-category="sandwich">
+            <h3>Lotus Biscoff</h3>
+            <p>Caramelized Biscoff bliss in every creamy sandwich.</p>
+              <p class="detail">Creamy Biscoff ice cream sandwiched between 2 handmade vanilla cookies.</p>
+            <ul class="prices"><li><span>1 piece</span><strong>₹120</strong></li><li><span>2 pieces</span><strong>₹220</strong></li></ul>
+          </article>
+        </div>
+
+        <h3 class="menu-heading" data-category="popsicle">Popsicles</h3>
+        <div class="box-grid box-grid-5">
+          <article class="box box-yellow reveal" data-category="popsicle">
+            <h3>Orange Blast Popsicle</h3>
+            <p>Zesty orange ice pop bursting with bright and juicy citrus flavour.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹69</strong></li></ul>
+          </article>
+          <article class="box box-lime reveal" data-category="popsicle">
+            <h3>Mint Mojito Popsicle</h3>
+            <p>(Non alcoholic) Cool minty ice pop with a refreshing citrus twist, perfect for beating the heat.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹69</strong></li></ul>
+          </article>
+          <article class="box box-lavender reveal" data-category="popsicle">
+            <h3>Kaala Khatta Popsicle</h3>
+            <p>Tangy, chatpata kaala khatta ice pop with a nostalgic street style kick.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹79</strong></li></ul>
+          </article>
+          <article class="box box-pink reveal" data-category="popsicle">
+            <h3>Litchi Love Popsicle</h3>
+            <p>Indulge in a refreshing, fruity treat that bursts with the sweet, tropical essence of litchi.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹79</strong></li></ul>
+          </article>
+          <article class="box box-red reveal" data-category="popsicle">
+            <h3>Juicy Watermelon Popsicle</h3>
+            <p>Watermelon ice pop: light, hydrating and made for summer cravings.</p>
+            <ul class="prices"><li><span>1 popsicle</span><strong>₹79</strong></li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inner child band -->
+    <section class="stock" aria-labelledby="stock-title">
+      <svg class="drip drip-top" aria-hidden="true"><use href="#drip"/></svg>
+      <div class="container stock-grid">
+        <div class="stock-copy reveal">
+          <h2 id="stock-title" class="stock-title">Keeping my inner child <em>well stocked.</em></h2>
+          <p>Grab a box of 6 and keep the freezer ready. The Bestsellers Combo puts one of every classic flavour in a single box for ₹699. Sharing is optional.</p>
+          <a href="#menu" class="btn btn-light">See the combos</a>
+        </div>
+        <div class="stock-art reveal">
+          <img class="basket" src="images/basket.jpg" alt="A wire shopping basket filled with Cremewich boxes in lavender, lime, pink, red and yellow" width="750" height="950" loading="lazy">
+          <p class="sticker sticker-yellow stock-sticker">Box of 6 · ₹699</p>
+        </div>
+      </div>
+      <svg class="drip drip-bottom" aria-hidden="true"><use href="#drip"/></svg>
+    </section>
+
+    <!-- Story -->
+    <section id="about" class="section story">
+      <div class="container story-row">
+        <div class="story-art reveal">
+          <img class="story-photo" src="images/pb.jpg" alt="A Cremewich ice cream sandwich between two crumbly chocolate cookie layers, with peanuts and chocolate chunks" width="1222" height="892" loading="lazy">
+          <p class="sticker sticker-lavender story-sticker">Crumbs guaranteed</p>
+        </div>
+        <div class="story-copy reveal">
+          <p class="sticker sticker-pink">Our story</p>
+          <h2>The cookie matters as much as the cream</h2>
+          <p>Most ice cream sandwiches get one half right. The ice cream is good but the cookie is rock hard, or the cookie is lovely and goes soggy in a minute. Cremewich started with a simple goal: make both halves worth eating on their own, then put them together.</p>
+          <a href="#menu" class="btn">Pick your bite</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="sticker sticker-yellow">Find us</p>
+          <h2>Come grab a bite</h2>
+          <dl class="info">
+            <div><dt>Address</dt><dd>123 Sweet Street<br>Your City</dd></div>
+            <div><dt>Hours</dt><dd>Tuesday to Sunday, 12pm to 10pm<br>Closed Mondays</dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:hello@cremewich.com">hello@cremewich.com</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="https://instagram.com/cremewich" rel="noopener">@cremewich</a></dd></div>
+          </dl>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <span class="form-tape" aria-hidden="true"></span>
+          <h3>Send us a note</h3>
+          <p class="form-hint">Stockist enquiries, parties, or a flavour request. We read every one.</p>
+          <label>Name
+            <input type="text" name="name" required autocomplete="name">
+          </label>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email">
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="wordmark footer-mark">Cremewich<sup>®</sup></span>
+      <div class="footer-meta">
+        <p class="footer-line">Stay sweet. Stay stocked.</p>
+        <p>&copy; <span id="year"></span> Cremewich. The perfect bite exists.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
